@@ -1,140 +1,131 @@
+<!---the doctype HTML declaration tells browser we're using HTML5-->
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Welcome to my Virtual Terrarium</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
-    <script src="" defer></script>
-  </head>
 
-  <body>
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <title>Welcome to my Virtual Terrarium</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="" />
-        <script src="" defer></script>
-      </head>
 
-      <body>
-        <div id="page">
-          <div id="left-container" class="container">
-            <div class="plant-holder">
-              <img
-                class="plant"
-                alt="A small green plant"
-                src="./images/plant1.png"
-              />
-            </div>
-            <div class="plant-holder">
-              <img
-                class="plant"
-                alt="A tall cactus plant"
-                src="./images/plant2.png"
-              />
-            </div>
-            <div class="plant-holder">
-              <img
-                class="plant"
-                alt="A tall cactus plant"
-                src="./images/plant3.png"
-              />
-            </div>
-            <div class="plant-holder">
-              <img
-                class="plant"
-                alt="A tall cactus plant"
-                src="./images/plant4.png"
-              />
-            </div>
-            <div class="plant-holder">
-              <img
-                class="plant"
-                alt="A tall cactus plant"
-                src="./images/plant5.png"
-              />
-            </div>
-            <div class="plant-holder">
-              <img
-                class="plant"
-                alt="A tall cactus plant"
-                src="./images/plant6.png"
-              />
-            </div>
-            <div class="plant-holder">
-              <img
-                class="plant"
-                alt="A tall cactus plant"
-                src="./images/plant7.png"
-              />
-            </div>
-          </div>
-          <div id="right-container" class="container">
-            <div class="plant-holder">
-              <img
-                class="plant"
-                alt="A small green plant"
-                src="./images/plant8.png"
-              />
-            </div>
-            <div class="plant-holder">
-              <img
-                class="plant"
-                alt="A tall cactus plant"
-                src="./images/plant9.png"
-              />
-            </div>
-            <div class="plant-holder">
-              <img
-                class="plant"
-                alt="A tall cactus plant"
-                src="./images/plant10.png"
-              />
-            </div>
-            <div class="plant-holder">
-              <img
-                class="plant"
-                alt="A tall cactus plant"
-                src="./images/plant11.png"
-              />
-            </div>
-            <div class="plant-holder">
-              <img
-                class="plant"
-                alt="A tall cactus plant"
-                src="./images/plant13.png"
-              />
-            </div>
-            <div class="plant-holder">
-              <img
-                class="plant"
-                alt="A tall cactus plant"
-                src="./images/plant14.png"
-              />
-            </div>
-            <div class="plant-holder">
-              <img
-                class="plant"
-                alt="A tall cactus plant"
-                src="./images/plant15.png"
-              />
-            </div>
-          </div>
+<!-- the root of our document, any additional HTML elements go inside -->
+<!--lang attribute that specifies language of content, useful for SEO a& accessibility-->
+<html lang-"en">
 
-          <div id="terrarium">
-            <div class="jar-top"></div>
-            <div class="jar-walls">
-              <div class="jar-glossy-long"></div>
-              <div class="jar-glossy-short"></div>
-            </div>
-            <div class="dirt"></div>
-            <div class="jar-bottom"></div>
-          </div>
-        </div>
-      </body>
-    </html>
-  </body>
+<!--contains meta info, like document's title-->
+<!--title tag within head = appears in browser tab & browser window -->
+
+<head>
+  <title>Welcome to my Virtual Terrarium</title>
+  <!--provides info about document like author, description, key words-->
+  <!--a self closing tag-->
+  <meta charset="utf-8">
+  <!--ensures our webpage scales correctly on different devices-->
+  <meta name="viewport" , content="width=device-width, initial-scale=1">
+  <!--allows us to style webpage w/CSS-->
+  <!--"rel" attribute specifies relationship as a stylesheet & "href" attribute provides path to CSS file-->
+  <link rel="stylesheet" , href="">
+  <!--allows us to link javascript file-->
+  <!--"src" attribute specifies path to script & defer attribute -->
+  <script src="" defer></script>
+</head>
+
+<!-- holds the main content displayed-->
+
+<body>
+  <!--the main header-->
+  <h1>My Terrarium</h1>
+
+  <!-- divs are used to group content. helps us organize page structure & apply styles effectively-->
+  <!--"id" uniquely idenitifes an element = useful for applying styles in CSS & targeting it w/JS-->
+  <div id="page">
+    <!--serves as a placeholder for plant images-->
+    <!--allowing us to maintain & style similar elements together-->
+    <!--"class" allows us to add styles to multiple elements-->
+    <!--left container of plants-->
+    <div id="left" class="container">
+      <div class="plant-holder">
+        <!--has an attribute called class setting it equal to value of plant, an id of plant1, an alt attribute w/its value (text decrips for accessibility) & file -->
+        <img class="plant" id="plant1" alt="a small plant"
+          src="/Users/chiashismacbook/Desktop/Practice Code/LinkedIn Web Dev/html-css-js-LL/docs/02-html/src/images/plant1.png">
+      </div>
+      <div class="plant-holder">
+        <!--has an attribute called class setting it equal to value of plant, an id of plant1, & file -->
+        <img class="plant" id="plant2" alt="a small cactus plant"
+          src="/Users/chiashismacbook/Desktop/Practice Code/LinkedIn Web Dev/html-css-js-LL/docs/02-html/src/images/plant2.png">
+      </div>
+      <div class="plant-holder">
+        <!--has an attribute called class setting it equal to value of plant, an id of plant1, & file -->
+        <img class="plant" id="plant3" alt="a small pink plant"
+          src="/Users/chiashismacbook/Desktop/Practice Code/LinkedIn Web Dev/html-css-js-LL/docs/02-html/src/images/plant3.png">
+      </div>
+      <div class="plant-holder">
+        <!--has an attribute called class setting it equal to value of plant, an id of plant1, & file -->
+        <img class="plant" id="plant4" alt="a small bush plant"
+          src="/Users/chiashismacbook/Desktop/Practice Code/LinkedIn Web Dev/html-css-js-LL/docs/02-html/src/images/plant4.png">
+      </div>
+      <div class="plant-holder">
+        <!--has an attribute called class setting it equal to value of plant, an id of plant1, & file -->
+        <img class="plant" id="plant5" alt="a small green-blue plant"
+          src="/Users/chiashismacbook/Desktop/Practice Code/LinkedIn Web Dev/html-css-js-LL/docs/02-html/src/images/plant5.png">
+      </div>
+      <div class="plant-holder">
+        <!--has an attribute called class setting it equal to value of plant, an id of plant1, & file -->
+        <img class="plant" id="plant6" alt="a small plant"
+          src="/Users/chiashismacbook/Desktop/Practice Code/LinkedIn Web Dev/html-css-js-LL/docs/02-html/src/images/plant6.png">
+      </div>
+      <div class="plant-holder">
+        <!--has an attribute called class setting it equal to value of plant, an id of plant1, & file -->
+        <img class="plant" id="plant7" alt="a small cactus-like plant"
+          src="/Users/chiashismacbook/Desktop/Practice Code/LinkedIn Web Dev/html-css-js-LL/docs/02-html/src/images/plant7.png">
+      </div>
+    </div>
+
+    <!--right container of plants-->
+    <div id="right" class="container">
+      <div class="plant-holder">
+        <!--has an attribute called class setting it equal to value of plant, an id of plant1, & file -->
+        <img class="plant" id="plant8" alt="a small cactus-like plant w/orange details"
+          src="/Users/chiashismacbook/Desktop/Practice Code/LinkedIn Web Dev/html-css-js-LL/docs/02-html/src/images/plant8.png">
+      </div>
+      <div class="plant-holder">
+        <!--has an attribute called class setting it equal to value of plant, an id of plant1, & file -->
+        <img class="plant" id="plant9" alt="a small, gray leafy plant"
+          src="/Users/chiashismacbook/Desktop/Practice Code/LinkedIn Web Dev/html-css-js-LL/docs/02-html/src/images/plant9.png">
+      </div>
+      <div class="plant-holder">
+        <!--has an attribute called class setting it equal to value of plant, an id of plant1, & file -->
+        <img class="plant" id="plant10" alt="a small bush-like plant"
+          src="/Users/chiashismacbook/Desktop/Practice Code/LinkedIn Web Dev/html-css-js-LL/docs/02-html/src/images/plant10.png">
+      </div>
+      <div class="plant-holder">
+        <!--has an attribute called class setting it equal to value of plant, an id of plant1, & file -->
+        <img class="plant" id="plant11" alt="a cactus plant"
+          src="/Users/chiashismacbook/Desktop/Practice Code/LinkedIn Web Dev/html-css-js-LL/docs/02-html/src/images/plant11.png">
+      </div>
+      <div class="plant-holder">
+        <!--has an attribute called class setting it equal to value of plant, an id of plant1, & file -->
+        <img class="plant" id="plant12" alt="a small, colorful, spiky plant"
+          src="/Users/chiashismacbook/Desktop/Practice Code/LinkedIn Web Dev/html-css-js-LL/docs/02-html/src/images/plant12.png">
+      </div>
+      <div class="plant-holder">
+        <!--has an attribute called class setting it equal to value of plant, an id of plant1, & file -->
+        <img class="plant" id="plant13" alt="a big cactus"
+          src="/Users/chiashismacbook/Desktop/Practice Code/LinkedIn Web Dev/html-css-js-LL/docs/02-html/src/images/plant13.png">
+      </div>
+      <div class="plant-holder">
+        <!--has an attribute called class setting it equal to value of plant, an id of plant1, & file -->
+        <img class="plant" id="plant14" alt="a circular cactus-like plant"
+          src="/Users/chiashismacbook/Desktop/Practice Code/LinkedIn Web Dev/html-css-js-LL/docs/02-html/src/images/plant14.png">
+      </div>
+    </div>
+    <!--container for terrarium jar-->
+    <!--terrarium broken up into multiple parts. EX: top, walls, reflection -->
+    <div id="terrarium">
+      <div class="jar-top"></div>
+      <!--inside of jar walls is the glassy reflection to represent its a wall-->
+      <div class="jar-walls">
+        <div class="jar-glossy-long"></div>
+        <div class="jar-glossy-short"></div>
+        <div class="dirt"></div>
+        <div class="jar-bottom"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
